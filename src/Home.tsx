@@ -1,8 +1,17 @@
+import { Link } from 'react-router-dom';
+
 const Home = (): JSX.Element => {
   return (
     <>
       <h1>画面上で書けるプロフィール帳</h1>
-      <h2>～ジャニオタ・アモアスver.～</h2>
+      <div>
+        <Link to='/for-adult'>
+          <h3>大人のプロフィール帳</h3>
+        </Link>
+        <Link to='/for-amongus'>
+          <h3>ジャニオタ・アモアス用プロフィール帳</h3>
+        </Link>
+      </div>
     </>
   );
 };
